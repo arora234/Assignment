@@ -20,7 +20,7 @@ private val apiService: ApiService){
 
     suspend fun fetchData(): Flow<ForecastData> {
         return flow {
-            emit(apiService.getForecast(1.3521, 103.8198))
+            emit(apiService.getForecast(28.4595, 77.0266))
         }.flowOn(Dispatchers.IO)
     }
 }
